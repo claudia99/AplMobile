@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="iUp-hx-DCw">
+            <objects>
+                <viewController storyboardIdentifier="Screen3" id="InR-ED-Yer" customClass="ProfileViewController" customModule="AplMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iwp-b0-M8T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="QFB-s9-xDw">
+                                <rect key="frame" x="10" y="64" width="394" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="vSp-W9-OZd"/>
+                                    <constraint firstAttribute="height" constant="200" id="zlF-ro-7T3"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vSp-W9-OZd"/>
+                                        <exclude reference="zlF-ro-7T3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="zlF-ro-7T3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="vSp-W9-OZd"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwL-ho-ngc">
+                                <rect key="frame" x="20" y="64" width="384" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Wbn-PZ-IzV"/>
+                                    <constraint firstAttribute="height" constant="400" id="yqI-Cj-MpJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Wbn-PZ-IzV"/>
+                                        <exclude reference="yqI-Cj-MpJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Wbn-PZ-IzV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="yqI-Cj-MpJ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="loadImageButtonTapped:" destination="InR-ED-Yer" eventType="touchUpInside" id="aw0-zc-DBC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SK3-rC-yvA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PwL-ho-ngc" firstAttribute="leading" secondItem="SK3-rC-yvA" secondAttribute="leading" constant="20" id="Kxl-2w-TeZ"/>
+                            <constraint firstItem="PwL-ho-ngc" firstAttribute="top" secondItem="SK3-rC-yvA" secondAttribute="top" constant="20" id="L43-hC-w04"/>
+                            <constraint firstItem="SK3-rC-yvA" firstAttribute="trailing" secondItem="PwL-ho-ngc" secondAttribute="trailing" constant="10" id="PMw-HU-yqA"/>
+                            <constraint firstItem="QFB-s9-xDw" firstAttribute="leading" secondItem="SK3-rC-yvA" secondAttribute="leading" constant="10" id="VD9-gy-fZq"/>
+                            <constraint firstItem="SK3-rC-yvA" firstAttribute="trailing" secondItem="QFB-s9-xDw" secondAttribute="trailing" constant="10" id="XiI-LF-gON"/>
+                            <constraint firstItem="QFB-s9-xDw" firstAttribute="top" secondItem="SK3-rC-yvA" secondAttribute="top" constant="20" id="wer-4i-L1T"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="c7O-16-cBC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="chooseBuuton" destination="PwL-ho-ngc" id="4nQ-4o-S6N"/>
+                        <outlet property="imageView" destination="QFB-s9-xDw" id="SJk-J8-GeV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytl-Vh-GbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="profile" width="612" height="612"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

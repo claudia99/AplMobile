@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "2022-03-20T170750Z_582083906_UP1EI3K1BL063_RTRMADP_3_MOTOR-F1-BAHRAIN.jpg copy.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

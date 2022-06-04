@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2zk-KA-NxY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Screen1-->
+        <scene sceneID="rfH-ah-KLu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Screen1" referencedIdentifier="Screen1" id="Rl4-BH-y5a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="faves" image="star" catalog="system" id="npO-Vy-rtG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AII-6e-yja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="-232"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IiN-is-fRa">
+            <objects>
+                <tabBarController id="2zk-KA-NxY" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N3c-ue-pWv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Rl4-BH-y5a" kind="relationship" relationship="viewControllers" id="iVb-Lh-WQ3"/>
+                        <segue destination="TBk-rL-9pZ" kind="relationship" relationship="viewControllers" id="aQQ-yi-2op"/>
+                        <segue destination="Hxt-A3-Z2B" kind="relationship" relationship="viewControllers" id="pX0-cf-1Nr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wCR-in-lbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247" y="-31"/>
+        </scene>
+        <!--Screen2-->
+        <scene sceneID="Kz9-ed-2FL">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Screen2" storyboardName="Screen2" referencedIdentifier="Screen2" id="TBk-rL-9pZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="top" image="chart.bar.xaxis" catalog="system" springLoaded="YES" id="TL3-Mk-TRZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HeH-gz-377" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="-104"/>
+        </scene>
+        <!--Screen3-->
+        <scene sceneID="CIS-11-9qh">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Screen3" storyboardName="Screen3" referencedIdentifier="Screen3" id="Hxt-A3-Z2B" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="other" image="personalhotspot" catalog="system" id="xYK-zU-9Zh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SD2-x7-Nke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chart.bar.xaxis" catalog="system" width="128" height="98"/>
+        <image name="personalhotspot" catalog="system" width="128" height="75"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
