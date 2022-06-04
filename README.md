@@ -1,1 +1,1 @@
-#F1 App
+F1 App
